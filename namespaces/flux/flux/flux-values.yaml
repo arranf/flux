@@ -10,7 +10,7 @@ image:
 registry:
   rps: 100
   burst: 30
-  automationInterval: 1m
+  automationInterval: 15m
 memcached:
   enabled: true
 syncGarbageCollection:
