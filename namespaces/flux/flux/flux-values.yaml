@@ -1,5 +1,9 @@
 helmOperator:
   create: false
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
 git:
   url: "git@github.com:arranf/flux.git"
   branch: master
@@ -7,12 +11,6 @@ git:
 image:
   repository: raspbernetes/flux
   tag: 1.18.0
-registry:
-  rps: 100
-  burst: 30
-  automationInterval: 15m
-memcached:
-  enabled: true
 syncGarbageCollection:
   enabled: true
   dry: false

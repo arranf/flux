@@ -13,5 +13,6 @@ spec:
     repository: https://charts.fluxcd.io/
     name: flux
     version: 1.2.0
+  valuesFrom:
   - externalSourceRef:
       url: https://raw.githubusercontent.com/arranf/flux/master/namespaces/flux/flux/flux-values.yaml
