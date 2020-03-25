@@ -4,7 +4,7 @@ metadata:
   name: pd-to-slack
   namespace: jobs
 spec:
-  schedule: "* * * * 1,2,3,4,5"
+  schedule: "0 9 * * 1,2,3,4,5"
   jobTemplate:
     spec:
       template:
