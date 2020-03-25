@@ -1,0 +1,15 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: pd-to-slack
+  namespace: jobs
+spec:
+  schedule: "* * * * 1,2,3,4,5"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: pd-to-slack
+            image: arranf/pd-to-slack:0.1.2-arm
+          restartPolicy: OnFailure
