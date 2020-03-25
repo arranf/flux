@@ -18,4 +18,8 @@ spec:
             env:
             - name: SCHEDULE_IDS
               value: PUNRLYL,PA60AJX
+            envFrom:
+            - secretRef:
+                name: pd-to-slack-secrets
+                optional: false
           restartPolicy: OnFailure
