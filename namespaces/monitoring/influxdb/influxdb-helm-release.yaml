@@ -9,7 +9,9 @@ metadata:
 spec:
   releaseName: influxdb
   chart:
-    repository: https://helm.influxdata.com/
+    version: 4.4.3
+    repository: https://influxdata.github.io/helm-charts
     name: influxdb
+  values:
     persistence:
         existingClaim: metrics-volume
