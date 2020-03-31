@@ -14,15 +14,3 @@ spec:
   hostPath:
     path: "/mnt/ssd/metrics"
 ---
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  namespace: monitoring
-  name: metrics-volume
-spec:
-  storageClassName: manual
-  accessModes:
-    - ReadWriteOnce
-  resources:
-    requests:
-      storage: 100Gi
