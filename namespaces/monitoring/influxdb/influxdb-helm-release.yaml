@@ -1,0 +1,15 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: influxdb
+  namespace: kube-system
+  annotations:
+    fluxcd.io/ignore: "false"
+    fluxcd.io/automated: "false"
+spec:
+  releaseName: influxdb
+  chart:
+    repository: https://helm.influxdata.com/
+    name: influxdb
+    persistence:
+        existingClaim: metrics-volume
