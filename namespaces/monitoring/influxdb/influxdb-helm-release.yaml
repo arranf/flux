@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: influxdb
-  namespace: kube-system
+  namespace: monitoring
   annotations:
     fluxcd.io/ignore: "false"
     fluxcd.io/automated: "false"
