@@ -17,3 +17,5 @@ spec:
         tag: 1.7.10
     persistence:
         existingClaim: metrics-volume
+    ingress:
+      enabled: true
