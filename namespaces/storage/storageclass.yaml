@@ -3,7 +3,7 @@ kind: StorageClass
 metadata:
   name: manual
   namespace: storage
-provisioner: kubernetes.io/nfs
+provisioner: kubernetes.io/NFS
 reclaimPolicy: Retain
 allowVolumeExpansion: true
 volumeBindingMode: Immediate

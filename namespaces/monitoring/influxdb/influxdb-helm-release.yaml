@@ -13,5 +13,7 @@ spec:
     repository: https://influxdata.github.io/helm-charts
     name: influxdb
   values:
+    image:
+        tag: 1.7.10
     persistence:
         existingClaim: metrics-volume
