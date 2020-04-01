@@ -27,5 +27,6 @@ spec:
     envFromSecret: grafana-secret      
     persistence:
       enabled: true
+      existingClaim: grafana
       size: 10Gi
       storageClassName: manual
