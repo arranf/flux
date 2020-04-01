@@ -16,17 +16,17 @@ spec:
     image:
       tag: 6.7.1-ubuntu
     resources:
-        limits:
-          cpu: 1000m
-          memory: 10242Mi
-        requests:
-          cpu: 50m
-          memory: 512Mi
+      limits:
+        cpu: 1000m
+        memory: 10242Mi
+      requests:
+        cpu: 50m
+        memory: 512Mi
     service:
       type: LoadBalancer
-    envFromSecret: grafana-secret      
+    envFromSecret: grafana-secret
     persistence:
-      enabled: true
+      enabled: false
       existingClaim: grafana
       size: 10Gi
       storageClassName: manual
