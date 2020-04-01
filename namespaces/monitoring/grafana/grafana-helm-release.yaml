@@ -24,6 +24,7 @@ spec:
           memory: 512Mi
     service:
       type: LoadBalancer
+    envFromSecret: grafana-secret      
     persistence:
       enabled: true
       existingClaim: grafana
