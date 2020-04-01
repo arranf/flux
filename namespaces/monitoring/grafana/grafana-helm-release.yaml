@@ -24,8 +24,13 @@ spec:
           memory: 512Mi
     service:
       type: LoadBalancer
-    livenessProbe: |
-      { "httpGet": { "path": "/api/health", "port": 3000 } "initialDelaySeconds": 120, "timeoutSeconds": 60, "failureThreshold": 10 }
+    livenessProbe: 
+      httpGet: 
+        path: "/api/health"
+        port: 3000
+      initialDelaySeconds: 120
+      timeoutSeconds: 60
+      failureThreshold: 10
     envFromSecret: grafana-secret      
     persistence:
       enabled: true
