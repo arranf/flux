@@ -25,13 +25,8 @@ spec:
     service:
       type: LoadBalancer
     livenessProbe: 
-      httpGet: 
-        path: "/api/health"
-        port: 3000
-      initialDelaySeconds: 120
-      timeoutSeconds: 60
-      failureThreshold: 10
     envFromSecret: grafana-secret      
     persistence:
       enabled: true
-      existingClaim: grafana
+      size: 10Gi
+      storageClassName: manual
