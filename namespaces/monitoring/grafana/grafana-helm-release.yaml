@@ -17,6 +17,6 @@ spec:
       tag: 6.7.1-ubuntu
     service:
       type: LoadBalancer
-    persistence:
-      enabled: true
-      existingClaim: grafana
+    # persistence:
+    #   enabled: true
+    #   existingClaim: grafana
