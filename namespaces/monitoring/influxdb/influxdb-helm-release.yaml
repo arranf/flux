@@ -19,3 +19,9 @@ spec:
         existingClaim: metrics-volume
     ingress:
       enabled: true
+      annotations:
+        kubernetes.io/ingress.class: "nginx"
+    setDefaultUser:
+      enabled: true
+      user:
+        existingSecret: influxdb-auth
