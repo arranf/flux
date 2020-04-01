@@ -13,6 +13,8 @@ spec:
     repository: https://kubernetes-charts.storage.googleapis.com/
     name: grafana
   values:
+    image:
+      tag: 6.7.1-ubuntu
     service:
       type: LoadBalancer
     persistence:
