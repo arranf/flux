@@ -15,8 +15,15 @@ spec:
   values:
     image:
       tag: 6.7.1-ubuntu
+    resources:
+        limits:
+          cpu: 500m
+          memory: 512Mi
+        requests:
+          cpu: 0
+          memory: 512Mi
     service:
       type: LoadBalancer
-    # persistence:
-    #   enabled: true
-    #   existingClaim: grafana
+    persistence:
+      enabled: true
+      existingClaim: grafana
