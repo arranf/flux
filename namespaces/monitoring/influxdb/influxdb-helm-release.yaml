@@ -18,10 +18,12 @@ spec:
     persistence:
         existingClaim: influxdb
     ingress:
-      enabled: true
+      enabled: false
       hostname: "influxdb.local"
       annotations:
         kubernetes.io/ingress.class: "nginx"
+    service:
+      type: LoadBalancer
     setDefaultUser:
       enabled: true
       user:
