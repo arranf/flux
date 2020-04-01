@@ -17,8 +17,8 @@ spec:
       tag: 6.7.1-ubuntu
     resources:
         limits:
-          cpu: 500m
-          memory: 512Mi
+          cpu: 1000m
+          memory: 10242Mi
         requests:
           cpu: 50m
           memory: 512Mi
